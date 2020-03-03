@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <link href="./recursos/index.css" type="text/css" rel="stylesheet">
+        
+        <title>Crud</title> 
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <td> <!--Formulario e recolhimento de dados-->
+                    <form autocomplete="off"  onsubmit="event.preventDefault();onformSubmit();">
+                        <div>
+                            <label>Nome: </label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <div>
+                            <label>Idade: </label>
+                            <input type="text" name="idade" id="idade">
+                        </div>
+                        <div>
+                            <label>Cidade: </label>
+                            <input type="text" name="cidade" id="cidade">
+                        </div>
+                        <div class="botao">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </td>
+
+                <td>   <!--Mostruario de dados-->
+                    <table class="lista" id="info">
+                        <thead >
+                            <tr>
+                                <th>Nome</th>
+                                <th>Idade</th>
+                                <th>Cidade</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+        <script type="text/javascript" src="recursos/index.js">
+            
+        </script>
+    </body>
+
+</html>
